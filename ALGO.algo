@@ -1,0 +1,39 @@
+
+
+ALGORITHM Check-point (ch:string) : INTEGER ;
+VAR
+    i,j,k,z:INTEGER;
+    
+BEGIN
+k :=1
+   Read(ch) until ( ch[ ch.length-1 ] = "." ) ; 
+
+FOR i FROM 0 TO ch.length-1 step 1  DO
+
+
+    IF ((ch[i] <>" " ) && (ch[i]<>".") THEN
+
+      j++ ;  
+
+    END IF ; 
+
+    IF ch[i]=" "  THEN 
+    k++ ; 
+    END IF ; 
+
+    
+
+    IF ((ch[i] ="a" )||(ch[i]="e")||(ch[i] ="o" )||(ch[i]="y")||(ch[i] ="i" )||(ch[i]="u"))THEN z++ ;
+    END IF ;
+
+END FOR ;
+
+
+    write("The number of  caracteres is ",j);
+    write  (" the number world is" , k ); 
+    write (" the number of voyels is " , z );
+
+END
+
+
+
